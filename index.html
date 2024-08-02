@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gugu TalkShow</title>
+    <link rel="website icon" type="jpg" href="imagens/WhatsApp Image 2024-07-30 at 10.23.21_7c2d70e0.jpg">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="logo">
+            <img src="imagens/WhatsApp Image 2024-07-30 at 10.23.21_7c2d70e0.jpg" >
+            <h1 class="center">Gugu TalkShow</h1>
+        </div>
+        <p class="mensagem">Muito obrigado por estar fazendo parte da historia da Gugu TalkShow!<br><br>Adquira já sua camiseta show!</p>
+        <form  action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="fa223676-329c-472c-ad04-2313bcb6ffb9">
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="Nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email"  class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone"  class="labelInput">Telefone</label>
+                </div><br>
+                
+                <p>Camiseta:</p>
+                <input type="radio" name="feminina" id="genero" class="feminina" >
+                <label for="feminina">Feminina</label>
+                <br>
+
+                <input type="radio" name="masculina" id="genero" class="masculina" >
+                <label for="masculina">Masculina</label>
+                <br><br>
+
+                <p>Tamanho:</p>
+                <select name="">
+                    <option value="selecione">Selecione</option>
+                    <option value="selecione">P</option>
+                    <option value="modalidades">M</option>
+                    <option value="fretamento">G</option>
+                    <option value="fretamento">GG</option>
+                </select>
+                <br><br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco"  class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+
+                <button class="pagamento">
+                    <a href="https://link.mercadopago.com.br/deckcs">Clique aqui para pagar</a>
+                </button>
+                <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+
+</body>
+</html>

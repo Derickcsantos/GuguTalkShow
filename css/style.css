@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    color: #0a0a0a;
+}
+
+.box h1{
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+
+.inputBox{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5c5656;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(16, 68, 119);
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius:10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pagamento{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #f2f0fcf3;
+    margin-bottom: 10px;
+}
+
+.pag, .a_pag{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #f5f1f1;
+    text-decoration: none;
+    background-color: #1434c2;
+    margin-top: 80px;
+}
+
+.back{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: .5s ease;
+}
+
+.back:hover{
+    background-color: #d0d0dd;
+}
+
+.mensagem{
+    text-align: center;
+    margin-bottom: 20px
+}
+
+a{
+    color: #000;
+}
+
+.logo {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente o título com a imagem */
+}
+.logo img {
+    max-width: 100px; /* Ajusta o tamanho da imagem, se necessário */
+    margin-right: 18%; /* Espaço entre a imagem e o título */
+}
+.logo h1 {
+    font-size: 30px; /* Ajusta o tamanho da fonte do título, se necessário */
+    margin: 0; /* Remove margem padrão do <h1> */
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    #submit {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .inputUser {
+        font-size: 12px;
+    }
+
+    .pag, .a_pag {
+        font-size: 14px;
+    }
+}
